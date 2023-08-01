@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Galeria de fotos</title>
+        <link
+            rel="stylesheet"
+            href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <link rel="stylesheet" href="./main.css" />
+    <body>
+        <header>
+            <div>
+                <h1>Galeria de fotos</h1>
+            </div>
+        </header>
+
+        <section id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="./images/img-1.jpg"
+                        class="d-block w-100"
+                        alt="Foto de carro."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./images/img-2.jpg"
+                        class="d-block w-100"
+                        alt="Foto de carro."
+                    />
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./images/img-3.jpg"
+                        class="d-block w-100"
+                        alt="Foto de carro."
+                    />
+                </div>
+            </div>
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+            >
+                <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+            >
+                <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">Ford</div>
+                        <img src="./images/img-1.jpg" alt="" />
+                        <div class="card-body">
+                            <h4 class="card-title">Ford Mustang</h4>
+                            <p class="card-text">
+                                5.0 V8 TI-VCT GASOLINA GT PREMIUM SELECTSHIFT
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                            >
+                                Deixe seu comentário
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">Shelby</div>
+                        <img src="./images/img-2.jpg" alt="" />
+                        <div class="card-body">
+                            <h4 class="card-title">Shelby Cobra</h4>
+                            <p class="card-text">
+                                5.0 V8 TI-VCT GASOLINA BLACK SHADOW SELECTSHIFT
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                            >
+                                Deixe seu comentário
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-4">
+                    <div class="card">
+                        <div class="card-header">Cadillac</div>
+                        <img src="./images/img-3.jpg" alt="" />
+                        <div class="card-body">
+                            <h4 class="card-title">Cadillac De Ville</h4>
+                            <p class="card-text">
+                                3.6 PREMIUM COLLECTION AWD V6 FLEX 4P AUTOMÁTICO
+                            </p>
+                            <button
+                                type="button"
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                            >
+                                Deixe seu comentário
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                            Comentário
+                        </h1>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <textarea
+                            name=""
+                            id=""
+                            cols="49"
+                            rows="10"
+                            placeholder="Digite aqui..."
+                        ></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Fechar
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Salvar comentário
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>&copy; Lucas Santana - todos direitos reservados - 2023</div>
+        </footer>
+        <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    </body>
+</html>
